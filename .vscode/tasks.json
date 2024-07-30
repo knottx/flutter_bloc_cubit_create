@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Web",
+      "group": "build",
+      "type": "shell",
+      "dependsOrder": "sequence",
+      "dependsOn": ["Flutter: flutter build web", "Copy build/web to docs"]
+    },
+    {
+      "label": "Flutter: flutter build web",
+      "group": "none",
+      "type": "shell",
+      "command": "fvm flutter build web -t lib/main.dart"
+    },
+    {
+      "label": "Copy build/web to docs",
+      "group": "none",
+      "type": "shell",
+      "command": "cp",
+      "args": ["-a", "build/web/.", "docs"]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+
+include: package:flutter_lints/flutter.yaml
+
+formatter:
+  page_width: 80
+  trailing_commas: preserve
+
+linter:
+  rules:
+    always_use_package_imports: true
+    always_declare_return_types: true
+    avoid_empty_else: true
+    avoid_function_literals_in_foreach_calls: true
+    avoid_init_to_null: true
+    avoid_print: true
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_is_not_operator: true
+    prefer_single_quotes: true
+    require_trailing_commas: true
+    unnecessary_breaks: true
+    unnecessary_overrides: false
+    unrelated_type_equality_checks: true
+
+analyzer:
+  exclude:
+    - "**/*.gen.dart"
+  errors:
+    always_use_package_imports: error
+    always_declare_return_types: error
+    avoid_catching_errors: error
+    avoid_empty_else: error
+    avoid_init_to_null: error
+    avoid_print: error
+    avoid_redundant_argument_values: ignore
+    avoid_unnecessary_containers: error
+    curly_braces_in_flow_control_structures: error
+    file_names: error
+    leading_newlines_in_multiline_strings: error
+    library_names: error
+    prefer_const_constructors: error
+    prefer_const_constructors_in_immutables: error
+    prefer_const_literals_to_create_immutables: error
+    prefer_is_empty: error
+    prefer_is_not_empty: error
+    prefer_is_not_operator: error
+    prefer_single_quotes: error
+    require_trailing_commas: error
+    slash_for_doc_comments: error
+    unnecessary_brace_in_string_interps: error
+    unnecessary_breaks: error
+    unnecessary_overrides: error
+    unrelated_type_equality_checks: error
+    unused_element: warning
+    unused_import: warning
+    unused_local_variable: warning
+    library_private_types_in_public_api: ignore
+    deprecated_member_use_from_same_package: info
